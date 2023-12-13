@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctoradar</title>
+</head>
+<body>
+    {% extends 'layout/nav.html' %}
+    {% block content %}
+    <div class="testbox">
+        <h1>Añadir paciente</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <center>
+        <button class="b">Guardar</button>
+    </center>
+    </form>
+    </div>
+    {% endblock %}
+</body>
+</html>
